@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cek Tarif - LogiFest</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="cek-tarif.css">
+</head>
+<body>
+    <!-- Navbar sama seperti landing page -->
+    <nav class="navbar scrolled">
+        <!-- ... navbar content ... -->
+    </nav>
+
+    <div class="tracking-container">
+        <!-- Form Cek Tarif -->
+        <div id="cekTarifForm" class="tracking-form">
+            <div class="tracking-header">
+                <div class="resi-number">0123 4012 3401 0100</div>
+                <button class="report-btn">Report</button>
+            </div>
+
+            <div class="tracking-tabs">
+                <a href="#" class="tab">Lacak Paket</a>
+                <a href="#" class="tab active">Cek Tarif</a>
+                <a href="#" class="tab">Cari Drop Point</a>
+            </div>
+
+            <div class="form-content">
+                <div class="input-group">
+                    <label>Dari :</label>
+                    <input type="text" id="pengirim" placeholder="Nama Pengirim">
+                </div>
+                <div class="input-group">
+                    <label>Ke :</label>
+                    <input type="text" id="penerima" placeholder="Nama Penerima">
+                </div>
+                <div class="input-group">
+                    <label>Berat :</label>
+                    <input type="number" id="berat" placeholder="Berat dalam KG">
+                </div>
+                <button id="cariTarifBtn" class="cari-btn">Cari</button>
+            </div>
+        </div>
+
+        <!-- Detail Info (awalnya tersembunyi) -->
+        <div id="detailInfo" class="tracking-detail" style="display: none;">
+            <div class="sender-section">
+                <p class="label">Dari :</p>
+                <h3>Adrian Delmano Febrian</h3>
+                <p class="address">JNE Pedurangan, Semarang</p>
+            </div>
+
+            <div class="receiver-section">
+                <p class="label">Ke :</p>
+                <h3>Dzakwadhi Falah</h3>
+                <p class="address">JNE Bojong, Pekalongan</p>
+            </div>
+
+            <div class="package-details">
+                <h4>Detail Barang</h4>
+                <div class="detail-row">
+                    <span class="detail-label">Barang</span>
+                    <span class="detail-value">Aksesoris Laptop</span>
+                </div>
+                <div class="detail-row">
+                    <span class="detail-label">Berat</span>
+                    <span class="detail-value">3 Kg</span>
+                </div>
+                <div class="detail-row">
+                    <span class="detail-label">Asuransi</span>
+                    <span class="detail-value insurance">Ada <span class="price">+3.000,00</span></span>
+                </div>
+                <div class="detail-row">
+                    <span class="detail-label">Layanan</span>
+                    <span class="detail-value">Ekspress CTC17</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="total-section">
+            <div class="total-text">Total Pengiriman</div>
+            <div class="total-amount">Rp. 18.000,00</div>
+        </div>
+    </div>
+
+    <!-- Chat widget -->
+    <div class="chat-widget">
+        <img src="https://s3-alpha-sig.figma.com/img/a8c1/32eb/87b7254d9674ced00fbb4ebb6155d71a?Expires=1743984000&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=AyAVipzKHgjcFhm9jtiki49h5g8FTcTbPoddR5kUVNsxtWFx1Yv-vLgT7mT4HpYhd8opl04EVz27-cliTl3oU6hn6fubldoDbB8viu5EBMFHy8tm2KoyCVAMZFkNyPRsdEWp-V-IyQpByB9yMnqHbY9UEr2rXINjSyiEORZGEKo9IW~9knieZ-JpFqPKA7uNzEc4uKbLw3Nr2lIdJzO3DpwkeZB0n9Qs5Tu6SLXnHSugkQlS6FtRn4biLHzzdYcNOnTtO6SQfAdUB7an13IreIKZW7BSFO3vQ77L4PNJP198hXwbpYQVeqgcPT7nCzLwhTYGaraz5BKYi11n85WNRQ__" alt="Customer Service">
+        <span>Chat with Us</span>
+    </div>
+
+    <script src="cek-tarif.js"></script>
+</body>
+</html> 

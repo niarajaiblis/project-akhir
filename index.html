@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login dan Sign Up</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="body.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Card Login -->
+        <div class="login-section" id="loginSection">
+            <div class="card-label">Login</div>
+            <div class="card login-card">
+                <h2>Masuk Untuk<br>Menjelajahi Fitur Kirim Barang</h2>
+                <p class="subtitle">Fitur yang kami sediakan akan membantu anda dalam menggunakan jasa kami</p>
+                
+                <form id="loginForm">
+                    <div class="input-group">
+                        <i class="fas fa-envelope"></i>
+                        <input type="email" id="loginEmail" placeholder="jasaekspedisi2@example.com" required>
+                    </div>
+                    
+                    <div class="input-group">
+                        <i class="fas fa-lock"></i>
+                        <input type="password" id="loginPassword" placeholder="***********" required>
+                    </div>
+                    
+                    <div class="forgot-password">
+                        <a href="#">Lupa Password?</a>
+                    </div>
+                    
+                    <button type="submit" class="btn btn-primary">Masuk</button>
+                </form>
+                
+                <div class="social-login">
+                    <div class="social-btn facebook-btn">
+                        <i class="fab fa-facebook-f"></i>
+                    </div>
+                    <div class="social-btn google-btn">
+                        <i class="fab fa-google-plus-g"></i>
+                    </div>
+                </div>
+                
+                <div class="account-text">Belum punya akun?</div>
+                
+                <button class="btn btn-secondary" id="switchToSignup">Daftar</button>
+            </div>
+        </div>
+        
+        <!-- Card Sign Up -->
+        <div class="signup-section" id="signupSection">
+            <div class="card-label">Sign Up</div>
+            <div class="card signup-card">
+                <h2>Masuk Untuk<br>Menjelajahi Fitur Kirim Barang</h2>
+                <p class="subtitle">Fitur yang kami sediakan akan membantu anda dalam menggunakan jasa kami</p>
+                
+                <form id="signupForm">
+                    <div class="input-group">
+                        <i class="fas fa-envelope"></i>
+                        <input type="email" id="signupEmail" placeholder="Enter Your Email" required>
+                    </div>
+                    
+                    <div class="input-group">
+                        <i class="fas fa-lock"></i>
+                        <input type="password" id="signupPassword" placeholder="Password" required>
+                    </div>
+                    
+                    <div class="input-group">
+                        <i class="fas fa-lock"></i>
+                        <input type="password" id="confirmPassword" placeholder="Confirm Password" required>
+                    </div>
+                    
+                    <button type="submit" class="btn btn-primary">Sign Up</button>
+                </form>
+                
+                <div class="account-text">Sudah punya akun?</div>
+                
+                <button class="btn btn-secondary" id="switchToLogin">Login</button>
+            </div>
+        </div>
+    </div>
+    
+    <script src="auth.js"></script>
+</body>
+</html> 
