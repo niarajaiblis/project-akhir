@@ -25,7 +25,7 @@ document.addEventListener('DOMContentLoaded', function() {
     if (chatWidget) {
         chatWidget.addEventListener('click', function() {
             // Implementasi fungsi chat
-            alert('Chat feature will be implemented soon');
+            window.location.href = 'chatadmin.html';
         });
     }
 

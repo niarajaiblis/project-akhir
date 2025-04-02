@@ -80,8 +80,10 @@
                 <!-- Service Cards -->
                 <div class="service-cards">
                     <div class="service-card">
-                        <img src="lacak.png" alt="Lacak Paket">
-                        <span>Lacak Paket</span>
+                        <div class="lacak-paket-btn">
+                            <img src="lacak.png" alt="Lacak Paket">
+                            <span>Lacak Paket</span>
+                        </div>
                     </div>
                     <div class="service-card">
                         <img src="money.png" alt="Cek Tarif">
@@ -200,6 +202,56 @@
             </div>
         </div>
     </footer>
+
+    <!-- Modal -->
+    <div id="trackingModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <div class="tracking-info">
+                <h1>0123 4012 3401 0100</h1>
+                <button class="detail-btn">Detail Info</button>
+                <button class="track-btn">Track Info</button>
+            </div>
+            <div class="shipment-info">
+                <p>Dikirim: 12 April 2025</p>
+                <p>Waktu: 12:21 WIB</p>
+            </div>
+            <div class="status-message">
+                <p>Kurir telah mulai perjalanan menuju ke lokasi anda, cek treacking perjalanan kurir untuk mengetahui posisi paket anda sekarang. Terimakasih!</p>
+            </div>
+            <div class="timeline">
+                <div class="event">
+                    <p>Paket Diterima di :</p>
+                    <strong>JNE Center Semarang</strong>
+                    <span>15/03/2025 12:32</span>
+                </div>
+                <div class="event">
+                    <p>Paket Diantar oleh :</p>
+                    <strong>JNE Center Semarang</strong>
+                    <span>15/03/2025 14:20</span>
+                </div>
+                <div class="event">
+                    <p>Paket Diterima di :</p>
+                    <strong>Sorting Center Semarang</strong>
+                    <span>16/03/2025 10:14</span>
+                </div>
+                <div class="event">
+                    <p>Paket Diteruskan ke tujuan :</p>
+                    <strong>Uxspress</strong>
+                    <div class="actions">
+                        <button class="refresh-btn">Refresh track</button>
+                        <button class="detail-lokasi-btn">Detail Lokasi</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Chat widget -->
+    <div class="chat-widget">
+        <img src="https://s3-alpha-sig.figma.com/img/a8c1/32eb/87b7254d9674ced00fbb4ebb6155d71a?Expires=1743984000&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=AyAVipzKHgjcFhm9jtiki49h5g8FTcTbPoddR5kUVNsxtWFx1Yv-vLgT7mT4HpYhd8opl04EVz27-cliTl3oU6hn6fubldoDbB8viu5EBMFHy8tm2KoyCVAMZFkNyPRsdEWp-V-IyQpByB9yMnqHbY9UEr2rXINjSyiEORZGEKo9IW~9knieZ-JpFqPKA7uNzEc4uKbLw3Nr2lIdJzO3DpwkeZB0n9Qs5Tu6SLXnHSugkQlS6FtRn4biLHzzdYcNOnTtO6SQfAdUB7an13IreIKZW7BSFO3vQ77L4PNJP198hXwbpYQVeqgcPT7nCzLwhTYGaraz5BKYi11n85WNRQ__" alt="Customer Service">
+        <span>Chat with Us</span>
+    </div>
 
     <script src="auth.js"></script>
     <script src="landing.js"></script>

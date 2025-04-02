@@ -532,6 +532,35 @@ footer {
     opacity: 0.9;
 }
 
+.chat-widget {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    background: none;
+    padding: 15px 25px;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+    z-index: 1000;
+}
+
+.chat-widget span {
+    background: rgba(0, 123, 255, 1);
+    color: #fff;
+    padding: 5px 7px;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+.chat-widget img {
+    width: 70px;
+    height: 70px;
+}
+
+
 /* Responsive Footer */
 @media (max-width: 1440px) {
     body {
@@ -714,4 +743,101 @@ footer {
     padding-top: 270px; /* Menambah luas ruang */
     z-index: 1;
     border-radius: 10px;
+}
+
+.lacak-paket-btn {
+    cursor: pointer;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 100px;
+    width: 100%;
+    height: calc(100% - 100px);
+    overflow: auto;
+    background-color: rgba(0,0,0,0.4);
+    padding-top: 20px;
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.tracking-info h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.tracking-info button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.tracking-info button:hover {
+    background-color: #0056b3;
+}
+
+.shipment-info, .status-message, .timeline {
+    margin-top: 20px;
+    color: #555;
+}
+
+.event {
+    margin-bottom: 15px;
+}
+
+.event p {
+    margin: 0;
+    font-weight: bold;
+}
+
+.event strong {
+    display: block;
+    margin-top: 5px;
+    color: #333;
+}
+
+.actions button {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    margin: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.actions button:hover {
+    background-color: #218838;
 }

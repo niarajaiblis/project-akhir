@@ -62,5 +62,36 @@ document.addEventListener('DOMContentLoaded', function() {
             // Tambahkan logika untuk layanan lain jika diperlukan
         });
     });
+
+    // Modal logic
+    const modal = document.getElementById('trackingModal');
+    const lacakPaketBtn = document.querySelector('.lacak-paket-btn');
+    const span = document.getElementsByClassName('close')[0];
+
+    if (lacakPaketBtn) {
+        lacakPaketBtn.onclick = function() {
+            modal.style.display = 'block';
+        }
+    }
+
+    if (span) {
+        span.onclick = function() {
+            modal.style.display = 'none';
+        }
+    }
+
+    window.onclick = function(event) {
+        if (event.target == modal) {
+            modal.style.display = 'none';
+        }
+    }
 }); 
 
+// Handle chat widget
+const chatWidget = document.querySelector('.chat-widget');
+if (chatWidget) {
+    chatWidget.addEventListener('click', function() {
+        // Implementasi fungsi chat
+        window.location.href = 'chatadmin.html';
+    });
+}
